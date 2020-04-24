@@ -1,0 +1,110 @@
+<section class="property-binding">
+
+    <!-- <article>
+        <h3>Interpolation</h3>
+        <p>String renderizada com interporlação: {{ url }}</p>
+        <p>Resultado de 1+1 = {{ 1 + 1 }}</p>
+        <p>Resultado de 1+1 != {{ 1 + 1 + getValor() }}</p>
+        <p>A condição é {{ cursoAngular || getCondition() }}</p>
+    </article>
+
+    <article>
+        <h3>Property binding</h3>
+        <img src="{{ urlImage }}">
+        <img [src]=urlImage>
+    </article> -->
+
+    <!-- <article>
+        <h3> Styles </h3>
+        <select #slcadriano (change)="0">
+            <option value="alert-success">success</option>
+            <option value="alert-info">info</option>
+            <option value="alert-warning">warning</option>
+            <option value="alert-danger">danger</option>
+        </select>
+
+        <div class="alert {{ slcadriano.value }}" role="alert">
+          Teste interpolations
+        </div>
+
+        <div class="alert alert-danger" role="alert"
+        [style.display]="slcadriano.value == 'alert-danger' ? 'block' : 'none' ">
+          Deu erro
+        </div>
+
+        <div class="alert" role="alert"
+        [class.alert-success]="slcadriano.value == 'alert-success'">
+          This is a secondary alert—check it out!
+        </div>
+        <div class="alerts" role="alert"
+        [class.alert-success]="slcadriano.value == 'alert-info'">
+          This is a success alert—check it out!
+        </div>
+        <div class="alert" role="alert"
+        [class.alert-success]="slcadriano.value == 'alert-warning'">
+          This is a danger alert—check it out!
+        </div>
+        <div class="alert" role="alert"
+        [class.alert-success]="slcadriano.value == 'alert-danger'">
+          This is a warning alert—check it out!
+        </div> 
+    </article> -->
+
+    <!-- <article>
+      <h3>Event Binding</h3>
+    
+
+    <button (click)="botaoClicado()" class="btn btn-primary">Me clique</button>
+    <br><br>
+    <input type="text"
+      (keyup)="keyuppress($event)"
+      (keyup.enter) = "Salvar(campoinput.value)"
+      (blur) = "Salvar(campoinput.value)"
+      #campoinput/>
+
+    <p>Valor atual: {{ textoatual }} </p>
+    <p>Valor Salvo: {{ textosalvo }}</p>
+
+    <span 
+      (mouseover)="mouseOver()"
+      (mouseout)="mouseOver()"
+      [class.mouseover] = "mouseover"
+    >Passe o Mouse aqui</span>
+  </article> -->
+
+<!-- <article>
+  <h3>Two-way data binding</h3>
+
+<input type="text"
+[value] = textotwoway
+(input) = "textotwoway = $event.target.value"
+/>
+<p>Você digitou: {{ textotwoway }}</p>
+
+<input type="text" [(ngModel)]="textotwoway"/>
+
+
+<p>O nome digitado abaixo é {{pessoa.nome}} e a idade é {{pessoa.idade}}</p>
+
+<input type="text" [(ngModel)]="pessoa.nome"/>
+<input type="text" [(ngModel)]="pessoa.idade"/>
+
+
+</article> -->
+
+<article>
+  <h3>
+    Input property
+  </h3>
+
+  <!-- <app-curso [nomecurso]="escolha[0].curso" [semestre]="escolha[0].semestre"></app-curso> -->
+  <app-output 
+    [valorinicial]='valorinicial'
+    (mudouValor)='alterouValor($event)'
+    ></app-output>
+
+    <!-- <app-ciclo></app-ciclo> -->
+  
+</article>
+
+</section>
